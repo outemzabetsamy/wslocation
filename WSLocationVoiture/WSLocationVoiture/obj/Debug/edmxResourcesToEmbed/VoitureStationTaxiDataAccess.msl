@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="location_dbModel1StoreContainer" CdmEntityContainer="location_dbEntities2">
+    <EntitySetMapping Name="station_taxi">
+      <EntityTypeMapping TypeName="location_dbModel1.station_taxi">
+        <MappingFragment StoreEntitySet="station_taxi">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="voiture">
+      <EntityTypeMapping TypeName="location_dbModel1.voiture">
+        <MappingFragment StoreEntitySet="voiture">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
