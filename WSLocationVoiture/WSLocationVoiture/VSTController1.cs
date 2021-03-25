@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -12,35 +12,14 @@ namespace WSLocationVoiture
         // GET api/<controller>
         public IEnumerable<station_taxi> GetStationTaxi()
         {
-            location_dbEntitie entities = new location_dbEntitie();
+            location_dbEntities entities = new location_dbEntities();
             return entities.station_taxi;
         }
 
         public IEnumerable<voiture> GetAgenceLocation()
         {
-            location_dbEntitie entities = new location_dbEntitie();
+            location_dbEntities entities = new location_dbEntities();
             return entities.voitures;
-        }
-
-        // GET api/<controller>/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<controller>
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
         }
     }
 }
